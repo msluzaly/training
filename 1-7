@@ -1,0 +1,53 @@
+package com.training;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(getMyAge());
+        System.out.println(getMyName());
+        twoNumbers(4,5);
+        oneNumber(3);
+        anotherOneNumber(15);
+        numberToPower(9);
+        squareNumber(81);
+    }
+
+    private static int getMyAge() {
+        return 26;
+    }
+
+    private static String getMyName() {
+        return "Maciej";
+    }
+
+    private static void twoNumbers(int number1, int number2) {
+        System.out.println(number1 + number2);
+        System.out.println(number1 - number2);
+        System.out.println(number1 * number2);
+    }
+
+    private static void oneNumber(int number3) {
+        if (number3 % 2 == 0) {
+            System.out.println(true);
+        }
+        else {System.out.println(false);
+        }
+    }
+
+    private static void anotherOneNumber(int number4) {
+        if (number4 % 3 == 0 && number4 % 5 == 0) {
+            System.out.println(true);
+        }
+        else {System.out.println(false);
+        }
+    }
+
+    private static void numberToPower(double number5) {
+        double pow = Math.pow(number5,3);
+        System.out.println(pow);
+    }
+
+    private static void squareNumber(double number6) {
+        double sqrt = Math.sqrt(number6);
+        System.out.println(sqrt);
+    }
+}
